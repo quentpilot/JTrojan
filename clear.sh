@@ -6,7 +6,7 @@
 # @Filename:            clear.sh
 # @Date:                2017-10-19T15:07:09+02:00
 # @Last modified by:    quentpilot
-# @Last modified time:  2017-10-19T16:21:07+02:00
+# @Last modified time:  2017-10-20T19:38:40+02:00
 # @License:             MIT
 # @See:                 projects.quentinlebian.fr/JTrojan
 
@@ -14,6 +14,7 @@
 # get current path
 pwd=$(pwd)
 
+rm $pwd/Trojan/*.class
 rm $pwd/Trojan/*/**.class
 rm $pwd/resources/dump/*.data
-rm $pwd/resources/infos/*.json
+rm $pwd/resources/infos/os.json

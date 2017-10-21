@@ -7,7 +7,7 @@
  * @Filename:           Writer.java
  * @Date:               2017-10-19T15:43:23+02:00
  * @Last modified by:   quentpilot
- * @Last modified time: 2017-10-19T16:15:22+02:00
+ * @Last modified time: 2017-10-20T18:42:48+02:00
  * @License:            MIT
  * @See:                projects.quentinlebian.fr/JTrojan
  */
@@ -15,7 +15,7 @@
 
 package Trojan.Tools;
 
-import Trojan.Installer.Infos;
+import Trojan.Install.Infos;
 import com.google.gson.Gson;
 import java.io.FileWriter;
 import java.io.IOException;

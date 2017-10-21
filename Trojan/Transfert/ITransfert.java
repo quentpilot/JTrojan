@@ -7,7 +7,7 @@
  * @Filename:           ITransfert.java
  * @Date:               2017-10-19T16:20:06+02:00
  * @Last modified by:   quentpilot
- * @Last modified time: 2017-10-19T16:20:29+02:00
+ * @Last modified time: 2017-10-21T12:19:59+02:00
  * @License:            MIT
  * @See:                projects.quentinlebian.fr/JTrojan
  */
@@ -15,12 +15,21 @@
 
 package Trojan.Transfert;
 
-public class ITransfert {
+public interface ITransfert {
 
   /**
-  * Main ITransfert constructor
+  * This method would to get current transfert data
+  * between server and client
   *
-  * @see ITransfert#ITransfert()
+  * @see ITransfert#get()
   */
-  public             ITransfert(){}
+  public void get();
+
+  /**
+  * This method would to update transfert data
+  * between server and client
+  *
+  * @see ITransfert#update()
+  */
+  public void update();
 }

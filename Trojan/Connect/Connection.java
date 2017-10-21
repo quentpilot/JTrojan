@@ -7,7 +7,7 @@
  * @Filename:           Connection.java
  * @Date:               2017-10-19T15:26:15+02:00
  * @Last modified by:   quentpilot
- * @Last modified time: 2017-10-19T16:38:40+02:00
+ * @Last modified time: 2017-10-21T12:21:35+02:00
  * @License:            MIT
  * @See:                projects.quentinlebian.fr/JTrojan
  */
@@ -15,11 +15,11 @@
 
 package Trojan.Connect;
 
-import Trojan.Installer.Infos;
+import Trojan.Install.Infos;
 import Trojan.Tools.Parser;
+import Trojan.Transfert.ITransfert;
 
-//public class Connection extends AConnection implements ITransfert {
-public class Connection {
+public class Connection implements ITransfert {
 
     /**
     * This attribute would to store
@@ -61,4 +61,18 @@ public class Connection {
     public Infos        getInfos() {
         return this.infos;
     }
+
+    /**
+    * This method would to get current transfert data
+    *
+    * @see Connection#run()
+    */
+    public void         get() {}
+
+      /**
+      * This method would to update transfert data
+      *
+      * @see Connection#run()
+      */
+      public void         update() {}
 }
