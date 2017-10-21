@@ -6,7 +6,7 @@
 # @Filename:            backup.sh
 # @Date:                2017-10-20T18:52:06+02:00
 # @Last modified by:    quentpilot
-# @Last modified time:  2017-10-21T12:41:16+02:00
+# @Last modified time:  2017-10-21T15:09:20+02:00
 # @License:             MIT
 # @See:                 projects.quentinlebian.fr/JTrojan
 
@@ -27,7 +27,7 @@ cp -r Trojan/ resources/backup/tmp
 cp -r resources/ resources/backup/tmp
 
 # create Java sources archive
-tar -cvf resources/backup/JTrojan.sources.tar resources/backup/tmp/*
+tar -cvf resources/backup/JTrojan.tar resources/backup/tmp/*
 
 # then remove temporary files
 rm -r $pwd/resources/backup/tmp/
